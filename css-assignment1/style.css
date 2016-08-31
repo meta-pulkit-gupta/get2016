@@ -1,0 +1,44 @@
+#Container {
+	background-color: #E2ECED;
+	float: left;
+	width: 100%;
+}
+
+#Main {
+	margin: 15px;
+	margin-top: 20px;
+	background-color: white;
+	padding: 15px;
+	padding-top: 10px;
+	min-height: 90vh;
+}
+
+#Header {
+	padding: 20px 0px 0px 40px;
+	border: 1px solid #0066cc;
+	background-color: #EEF6F8;
+	color: #0066cc;
+	font-family: "Times New Roman";
+}
+
+#ProfileImage {
+	float: left;
+	 border: 1px solid;
+	 margin: 20px;
+	 margin-left: 0px;
+	 margin-right: 50px;
+	 width: 15%;
+	 align-content: center;
+}
+
+#ProfileImage img {
+	width: 95%;
+}
+
+#Profile {
+	display: inline-block;
+}
+
+#Profile label{
+	display: block;
+}
