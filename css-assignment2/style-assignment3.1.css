@@ -1,0 +1,28 @@
+div {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	display: inline-block;
+	margin: 100px;
+	transition: .2s;
+}
+
+#one:hover {
+	transform: rotate(45deg);
+}
+
+#two:hover {
+	transform: scale(3,2);
+}
+
+#three:hover {
+	transform: skew(20deg, 40deg);
+}
+
+#four:hover {
+	transform: translate(100px);
+}
+
+#one:hover {
+	transform: rotate(45deg);
+}
