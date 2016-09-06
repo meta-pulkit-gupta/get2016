@@ -51,7 +51,7 @@ form label:nth-child(19) .icon {
 	padding: 9px 0px 9px 11px;
 }
 
-input:invalid, textarea:invalid {
+input:focus:invalid, textarea:focus:invalid {
 	border: 1px solid red;
 }
 
