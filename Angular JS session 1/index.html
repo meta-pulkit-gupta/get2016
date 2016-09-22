@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="">
+    <title></title>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script src="phone.js"></script>
+  </head>
+  <body ng-app="mobile" ng-controller="mobileCtrl" >
+      <div >
+        <div style="float:left">
+          Search:
+          <input type=text ng-model="searchBox" >
+          </br>
+          SortBy:
+          <select ng-model="orderValue" >
+            <option value="age" default>Newest</option>
+            <option value="name" >Alphabetic</option>
+          </select>
+        </div>
+      </div>
+      <div style="margin-left:20%;margin-top:5%;border:solid 1px gray;height:100px;padding:10px;color:#53AD52" ng-repeat="mob in mobile | filter : searchBox | orderBy : orderValue">
+        <div style="float:left;width:80px;height:80px">
+          <img src="{{mob.imageUrl}}" alt="image" style="width:80px;height:80px">
+        </div>
+        {{mob.name}}</br>
+        {{mob.snippet}}
+      </div>
+  </body>
+</html>
